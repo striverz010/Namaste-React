@@ -50,5 +50,25 @@ The crossorigin attribute sets the mode of the request to an HTTP CORS Request. 
 * Hence during the development we use `react.development.j`s for error warnings for debugging and during production we use `react.production.js` for optimization and high 
 b performance.
 # Q: What is async and defer?
+### `<script>`:
+ when the HTML file hits the normal script tag it stops parcing of html and request will be made to fetch the file and then executed. aftern the execution the again the 
+ html parcing is start.
+ 
+ <img src="https://blog.webdevsimplified.com/articleAssets/2019-12/javascript-loading-attributes-explained/videos/head-parsing.gif">
+ <img src="https://blog.webdevsimplified.com/articleAssets/2019-12/javascript-loading-attributes-explained/videos/normal-parsing-timeline.gif">
+ 
+### `<script async>`:
+  async downloads the file during HTML parsing and will pause the HTML parser to execute it when the file  has finished downloading.
+  
+  <img src="https://blog.webdevsimplified.com/articleAssets/2019-12/javascript-loading-attributes-explained/videos/async-parsing-timeline.gif">
+
+### `<script defer>`:
+ defer downloads the file during HTML parsing and will only execute it after the parser has completed. defer scripts are also guaranteed to execute in the order that they appear in the document.
+ 
+ <img src="https://blog.webdevsimplified.com/articleAssets/2019-12/javascript-loading-attributes-explained/videos/defer-parsing-timeline.gif">
+ 
+* Important! Defer and Async tags are available only for external scripts (with src=”” tag). If you will try to use them for internal scripts like <script>…</script> tags, defer and async will be ignored.
+
+
 
    
