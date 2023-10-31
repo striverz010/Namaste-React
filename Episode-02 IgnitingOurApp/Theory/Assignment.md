@@ -1,4 +1,4 @@
-# `Igniting our App``
+# `Igniting our App`
 
 
 ## Theory Assignment:
