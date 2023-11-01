@@ -2948,68 +2948,98 @@ var _react = require("react");
 var _reactDefault = parcelHelpers.interopDefault(_react);
 var _client = require("react-dom/client");
 var _clientDefault = parcelHelpers.interopDefault(_client);
+//Creating Header Component using Function componet
 const heading = /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h1", {
-    id: "title",
-    children: " React-App"
-}, "1", false, {
+    children: "React-App!"
+}, void 0, false, {
     fileName: "App.js",
-    lineNumber: 4,
-    columnNumber: 16
+    lineNumber: 5,
+    columnNumber: 15
 }, undefined);
 const root = (0, _clientDefault.default).createRoot(document.getElementById("root"));
-root.render(heading);
-const HeaderComponent = ()=>{
-    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+const LogoCreation = ()=>{
+    return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+        style: {
+            display: "flex",
+            justifyContent: "space-between"
+        },
         children: [
+            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("img", {
+                height: "100px",
+                width: "100px",
+                src: "https://imgs.search.brave.com/kdhAvDDas6D9BZffTojqoSUyJxxDJW7VgITEc8id15Y/rs:fit:500:0:0/g:ce/aHR0cHM6Ly9sb2dv/dHlwLnVzL2ZpbGUv/cmVhY3Quc3Zn.svg"
+            }, void 0, false, {
+                fileName: "App.js",
+                lineNumber: 10,
+                columnNumber: 13
+            }, undefined),
+            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("input", {
+                type: "text",
+                placeholder: "Search...",
+                style: {
+                    width: "200px",
+                    padding: "5px"
+                }
+            }, void 0, false, {
+                fileName: "App.js",
+                lineNumber: 11,
+                columnNumber: 13
+            }, undefined),
+            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("img", {
+                height: "100px",
+                width: "100px",
+                src: "https://imgs.search.brave.com/kdhAvDDas6D9BZffTojqoSUyJxxDJW7VgITEc8id15Y/rs:fit:500:0:0/g:ce/aHR0cHM6Ly9sb2dv/dHlwLnVzL2ZpbGUv/cmVhY3Quc3Zn.svg"
+            }, void 0, false, {
+                fileName: "App.js",
+                lineNumber: 12,
+                columnNumber: 13
+            }, undefined)
+        ]
+    }, void 0, true, {
+        fileName: "App.js",
+        lineNumber: 9,
+        columnNumber: 9
+    }, undefined);
+};
+_c = LogoCreation;
+const HeaderComponent = ()=>{
+    return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+        children: [
+            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)(LogoCreation, {}, void 0, false, {
+                fileName: "App.js",
+                lineNumber: 19,
+                columnNumber: 9
+            }, undefined),
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h1", {
                 children: "React-App1"
             }, void 0, false, {
                 fileName: "App.js",
-                lineNumber: 11,
+                lineNumber: 20,
                 columnNumber: 9
             }, undefined),
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h2", {
                 children: "React-App2"
             }, void 0, false, {
                 fileName: "App.js",
-                lineNumber: 12,
+                lineNumber: 21,
                 columnNumber: 9
             }, undefined)
         ]
     }, void 0, true, {
         fileName: "App.js",
-        lineNumber: 10,
-        columnNumber: 7
+        lineNumber: 18,
+        columnNumber: 5
     }, undefined);
 };
-_c = HeaderComponent;
+_c1 = HeaderComponent;
 root.render(/*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)(HeaderComponent, {}, void 0, false, {
     fileName: "App.js",
-    lineNumber: 15,
+    lineNumber: 25,
     columnNumber: 13
-}, undefined)); // using react element in functions componenet
- // const heading1=<h1>React-Heading</h1>;
- // const HeaderComponent1=()=>{
- //     <div>
- //         {heading1}
- //         <h1>React-App1</h1>
- //         <h2>React-App2</h2>
- //     </div>
- // }
- //using react component insider the react componet
- // const Title=()=>{
- //     console.log("Namaste-React");
- // }
- // const HeaderComponent2=()=>{
- //     ( <div>
- //         <Title/> or {Title()}
- //         <h1>React-App</h1>
- //         <h2>React-App2</h2>
- //     </div> 
- //     );
- // }
-var _c;
-$RefreshReg$(_c, "HeaderComponent");
+}, undefined));
+var _c, _c1;
+$RefreshReg$(_c, "LogoCreation");
+$RefreshReg$(_c1, "HeaderComponent");
 
   $parcel$ReactRefreshHelpers$c1db.postlude(module);
 } finally {

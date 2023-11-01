@@ -1,49 +1,25 @@
 import React from "react";
 import ReactDOM from "react-dom/client";
 
-const heading= <h1 id="title" key="1"> React-App</h1>
+//Creating Header Component using Function componet
+const heading=<h1>React-App!</h1>;
 const root=ReactDOM.createRoot(document.getElementById("root"));
-root.render(heading);
-
+const LogoCreation=()=>{
+    return (
+        <div style={{ display: 'flex', justifyContent: 'space-between' }}>
+            <img  height="100px" width="100px" src="https://imgs.search.brave.com/kdhAvDDas6D9BZffTojqoSUyJxxDJW7VgITEc8id15Y/rs:fit:500:0:0/g:ce/aHR0cHM6Ly9sb2dv/dHlwLnVzL2ZpbGUv/cmVhY3Quc3Zn.svg"></img>
+            <input  type="text" placeholder="Search..." style={{ width: '200px', padding: '5px' }} />
+            <img  height="100px" width="100px" src="https://imgs.search.brave.com/kdhAvDDas6D9BZffTojqoSUyJxxDJW7VgITEc8id15Y/rs:fit:500:0:0/g:ce/aHR0cHM6Ly9sb2dv/dHlwLnVzL2ZpbGUv/cmVhY3Quc3Zn.svg"></img>
+            </div>
+    );
+};
 const HeaderComponent=()=>{
-
-    ( <div>
+    return (
+    <div>
+        <LogoCreation/>
         <h1>React-App1</h1>
         <h2>React-App2</h2>
-    </div> );  
+    </div>
+    );
 };
 root.render(<HeaderComponent/>);
-
-
-
-
-// using react element in functions componenet
-
-// const heading1=<h1>React-Heading</h1>;
-
-// const HeaderComponent1=()=>{
-//     <div>
-//         {heading1}
-//         <h1>React-App1</h1>
-//         <h2>React-App2</h2>
-//     </div>
-// }
-
-
-
-
-//using react component insider the react componet
-
-// const Title=()=>{
-//     console.log("Namaste-React");
-// }
-
-// const HeaderComponent2=()=>{
-//     ( <div>
-//         <Title/> or {Title()}
-//         <h1>React-App</h1>
-//         <h2>React-App2</h2>
-//     </div> 
-
-//     );
-// }
