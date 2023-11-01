@@ -112,7 +112,10 @@ The package-lock.json file is a generated file that tracks the exact version of 
 It ensures that everyone working on the project has the same dependencies installed. This helps to avoid version conflicts and ensures that the project can be built and run consistently across different environments. 
 
 # Q: What is .parcel-cache?
+The `.parcel-cache`  folder stores information about your project when parcel builds it, so that when it rebuilds, it doesn't have to re-parse and re-analyze everything from scratch. It's a key reason why parcel can be so fast in development mode.
+
 # Q: What is the dist folder?
+The dist folder is a folder that contains the minimized version of source code. It's used for production web applications.
 # Q: Read about dif bundlers: vite, webpack, parcel
 
 
