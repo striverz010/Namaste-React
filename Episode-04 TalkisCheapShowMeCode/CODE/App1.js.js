@@ -166,8 +166,7 @@ const Cards=[
     }
 ]
 
-const RestaruantCard=({id,imageId})=>{
-    //const {id,text,imageId}=Card;
+const RestaruantCard=()=>{
     return (
         <div className="card">
 
@@ -176,33 +175,26 @@ const RestaruantCard=({id,imageId})=>{
            <h3>{BurgerKing.rating} stars </h3>
            <h5>{BurgerKing.cusines.join(" , ")}</h5> */}
            
-           <img src={"https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_660/"+ imageId}></img>
-           <h3>{id}</h3>
+           <img src={"https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_660/"+ Cards[0].imageId}></img>
+           <h3>{Cards[0].id}</h3>
+           <h2>{Cards[0].action?.text}</h2>
+
         </div>
     )
 }
 const BodyComponent=()=>{
     return (
         <div className="cards-list">
-            {/* <RestaruantCard {...Cards[0]}/>
-            <RestaruantCard {...Cards[1]}/>
-            <RestaruantCard {...Cards[2]}/>
-            <RestaruantCard {...Cards[3]}/>
-            <RestaruantCard {...Cards[4]}/>
-            <RestaruantCard {...Cards[5]}/>
-            <RestaruantCard {...Cards[0]}/>
-            <RestaruantCard {...Cards[1]}/>
-            <RestaruantCard {...Cards[3]}/>
-            <RestaruantCard {...Cards[2]}/> */}
-
-            {
-                Cards.map((card)=>{
-
-                    return <RestaruantCard {...card} key={card.id}/>
-                })
-            }
-            
-            
+            <RestaruantCard/>
+            <RestaruantCard/>
+            <RestaruantCard/>
+            <RestaruantCard/>
+            <RestaruantCard/>
+            <RestaruantCard/>
+            <RestaruantCard/>
+            <RestaruantCard/>
+            <RestaruantCard/>
+            <RestaruantCard/>
         </div>
     )
 }
