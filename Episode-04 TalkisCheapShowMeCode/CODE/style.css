@@ -1,0 +1,34 @@
+.header{
+    display:flex;
+    justify-content: space-between;
+    border: solid black 2px;
+    margin: 10px;
+}
+.logo{
+    width: 100px;
+    border-radius: 50px;
+    border: solid rgb(255, 123, 0) 3px;
+}
+.nav-items > ul {
+    display: flex;
+}
+.nav-items >ul >li{
+    padding: 12px;
+    list-style-type: none;
+    
+}
+.card{
+    width: 200px;
+    padding: 10px;
+    margin: 10px;
+    border: solid black 3px;
+    border-radius: 5px;
+}
+.card > img{
+    width: 100%;
+    border-radius: 30px;
+}
+.body-item{
+    display: flex;
+    flex-wrap: wrap;
+}
