@@ -142,7 +142,7 @@
       this[globalName] = mainExports;
     }
   }
-})({"j2WyO":[function(require,module,exports) {
+})({"jJWSB":[function(require,module,exports) {
 var global = arguments[3];
 var HMR_HOST = null;
 var HMR_PORT = null;
@@ -226,7 +226,11 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== "undefined") {
     var hostname = getHostname();
     var port = getPort();
-    var protocol = HMR_SECURE || location.protocol == "https:" && !/localhost|127.0.0.1|0.0.0.0/.test(hostname) ? "wss" : "ws";
+    var protocol = HMR_SECURE || location.protocol == "https:" && ![
+        "localhost",
+        "127.0.0.1",
+        "0.0.0.0"
+    ].includes(hostname) ? "wss" : "ws";
     var ws;
     try {
         ws = new WebSocket(protocol + "://" + hostname + (port ? ":" + port : "") + "/");
@@ -2948,35 +2952,24 @@ var _react = require("react");
 var _reactDefault = parcelHelpers.interopDefault(_react);
 var _client = require("react-dom/client");
 var _clientDefault = parcelHelpers.interopDefault(_client);
-const h1 = /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h1", {
-    children: "Namaste-React"
-}, void 0, false, {
-    fileName: "App.js",
-    lineNumber: 4,
-    columnNumber: 10
-}, undefined);
-//Creating the Header Component
-const HeaderComponent = ()=>{
+const Header = ()=>{
     return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-        className: "Header",
+        className: "header",
         children: [
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("a", {
                 href: "/",
-                children: [
-                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("img", {
-                        className: "logo",
-                        src: "https://play-lh.googleusercontent.com/iwGG0ojU1j43ZEEGiibNmLqd4Ha6eRtAjFlG2WE7uV8vUZTsrP1GDRwvA_aPJghkCqc=w480-h960-rw"
-                    }, void 0, false, {
-                        fileName: "App.js",
-                        lineNumber: 12,
-                        columnNumber: 22
-                    }, undefined),
-                    " "
-                ]
-            }, void 0, true, {
+                children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("img", {
+                    id: "logo",
+                    src: "https://play-lh.googleusercontent.com/iwGG0ojU1j43ZEEGiibNmLqd4Ha6eRtAjFlG2WE7uV8vUZTsrP1GDRwvA_aPJghkCqc"
+                }, void 0, false, {
+                    fileName: "App.js",
+                    lineNumber: 9,
+                    columnNumber: 21
+                }, undefined)
+            }, void 0, false, {
                 fileName: "App.js",
-                lineNumber: 12,
-                columnNumber: 10
+                lineNumber: 9,
+                columnNumber: 9
             }, undefined),
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
                 className: "nav-items",
@@ -2986,257 +2979,102 @@ const HeaderComponent = ()=>{
                             children: "Home"
                         }, void 0, false, {
                             fileName: "App.js",
-                            lineNumber: 17,
-                            columnNumber: 17
-                        }, undefined),
-                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("li", {
-                            children: "Contact"
-                        }, void 0, false, {
-                            fileName: "App.js",
-                            lineNumber: 18,
+                            lineNumber: 12,
                             columnNumber: 17
                         }, undefined),
                         /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("li", {
                             children: "About"
                         }, void 0, false, {
                             fileName: "App.js",
-                            lineNumber: 19,
+                            lineNumber: 13,
+                            columnNumber: 17
+                        }, undefined),
+                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("li", {
+                            children: "Contact"
+                        }, void 0, false, {
+                            fileName: "App.js",
+                            lineNumber: 14,
                             columnNumber: 17
                         }, undefined),
                         /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("li", {
                             children: "Cart"
                         }, void 0, false, {
                             fileName: "App.js",
-                            lineNumber: 20,
+                            lineNumber: 15,
                             columnNumber: 17
                         }, undefined)
                     ]
                 }, void 0, true, {
                     fileName: "App.js",
-                    lineNumber: 16,
+                    lineNumber: 11,
                     columnNumber: 13
                 }, undefined)
             }, void 0, false, {
                 fileName: "App.js",
-                lineNumber: 14,
+                lineNumber: 10,
                 columnNumber: 9
             }, undefined)
         ]
     }, void 0, true, {
         fileName: "App.js",
-        lineNumber: 10,
-        columnNumber: 9
+        lineNumber: 8,
+        columnNumber: 8
     }, undefined);
 };
-_c = HeaderComponent;
-//Creating the Body Components
-const Cards = [
-    {
-        "id": "750592",
-        "imageId": "v1675667625/PC_Creative%20refresh/Biryani_2.png",
-        "action": {
-            "link": "https://www.swiggy.com/collections/83649?collection_id=83649&searchQuery=biryani&tags=layout_CCS_Biryani&type=rcv2",
-            "text": "Biryani",
-            "type": "WEBLINK"
-        },
-        "entityType": "BANNER",
-        "accessibility": {
-            "altText": "restaurants curated for biryani",
-            "altTextCta": "open"
-        },
-        "entityId": "swiggy://collectionV2?collection_id=83649&tags=layout_CCS_Biryani&searchQuery=biryani",
-        "frequencyCapping": {}
-    },
-    {
-        "id": "750584",
-        "imageId": "v1675667626/PC_Creative%20refresh/South_Indian_4.png",
-        "action": {
-            "link": "https://www.swiggy.com/collections/83646?collection_id=83646&tags=layout_CCS_SouthIndian&type=rcv2",
-            "text": "South Indian",
-            "type": "WEBLINK"
-        },
-        "entityType": "BANNER",
-        "accessibility": {
-            "altText": "restaurants curated for south indian",
-            "altTextCta": "open"
-        },
-        "entityId": "swiggy://collectionV2?collection_id=83646&tags=layout_CCS_SouthIndian",
-        "frequencyCapping": {}
-    },
-    {
-        "id": "750582",
-        "imageId": "v1675667625/PC_Creative%20refresh/North_Indian_4.png",
-        "action": {
-            "link": "https://www.swiggy.com/collections/83645?collection_id=83645&tags=layout_CCS_NorthIndian&type=rcv2",
-            "text": "North Indian",
-            "type": "WEBLINK"
-        },
-        "entityType": "BANNER",
-        "accessibility": {
-            "altText": "restaurants curated for north indian",
-            "altTextCta": "open"
-        },
-        "entityId": "swiggy://collectionV2?collection_id=83645&tags=layout_CCS_NorthIndian",
-        "frequencyCapping": {}
-    },
-    {
-        "id": "750588",
-        "imageId": "v1674029848/PC_Creative%20refresh/3D_bau/banners_new/Chinese.png",
-        "action": {
-            "link": "https://www.swiggy.com/collections/83647?collection_id=83647&tags=layout_CCS_Chinese&type=rcv2",
-            "text": "Chinese",
-            "type": "WEBLINK"
-        },
-        "entityType": "BANNER",
-        "accessibility": {
-            "altText": "restaurant curated for chinese",
-            "altTextCta": "open"
-        },
-        "entityId": "swiggy://collectionV2?collection_id=83647&tags=layout_CCS_Chinese",
-        "frequencyCapping": {}
-    },
-    {
-        "id": "762797",
-        "imageId": "v1674029845/PC_Creative%20refresh/3D_bau/banners_new/Burger.png",
-        "action": {
-            "link": "https://www.swiggy.com/collections/83637?collection_id=83637&tags=layout_CCS_Burger&type=rcv2",
-            "text": "Burgers",
-            "type": "WEBLINK"
-        },
-        "entityType": "BANNER",
-        "accessibility": {
-            "altText": "restaurants curated for burger",
-            "altTextCta": "open"
-        },
-        "entityId": "swiggy://collectionV2?collection_id=83637&tags=layout_CCS_Burger",
-        "frequencyCapping": {}
-    },
-    {
-        "id": "750580",
-        "imageId": "v1674029856/PC_Creative%20refresh/3D_bau/banners_new/Pizza.png",
-        "action": {
-            "link": "https://www.swiggy.com/collections/83644?collection_id=83644&tags=layout_CCS_Pizza&type=rcv2",
-            "text": "pizzas",
-            "type": "WEBLINK"
-        },
-        "entityType": "BANNER",
-        "accessibility": {
-            "altText": "restaurants curated for pizza",
-            "altTextCta": "open"
-        },
-        "entityId": "swiggy://collectionV2?collection_id=83644&tags=layout_CCS_Pizza",
-        "frequencyCapping": {}
-    },
-    {
-        "id": "750644",
-        "imageId": "v1674029846/PC_Creative%20refresh/3D_bau/banners_new/Idli.png",
-        "action": {
-            "link": "https://www.swiggy.com/collections/80441?collection_id=80441&searchContext=idli&tags=layout_CCS_Idli&type=rcv2",
-            "text": "Idli",
-            "type": "WEBLINK"
-        },
-        "entityType": "BANNER",
-        "accessibility": {
-            "altText": "restaurants curated for idly",
-            "altTextCta": "open"
-        },
-        "entityId": "swiggy://collectionV2?collection_id=80441&tags=layout_CCS_Idli&searchContext=idli",
-        "frequencyCapping": {}
-    }
-];
-const RestaruantCard = ({ id, imageId })=>{
-    //const {id,text,imageId}=Card;
-    return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-        className: "card",
-        children: [
-            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("img", {
-                src: "https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_660/" + imageId
-            }, void 0, false, {
-                fileName: "App.js",
-                lineNumber: 179,
-                columnNumber: 12
-            }, undefined),
-            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h3", {
-                children: id
-            }, void 0, false, {
-                fileName: "App.js",
-                lineNumber: 180,
-                columnNumber: 12
-            }, undefined)
-        ]
-    }, void 0, true, {
-        fileName: "App.js",
-        lineNumber: 172,
-        columnNumber: 9
-    }, undefined);
-};
-_c1 = RestaruantCard;
-const BodyComponent = ()=>{
-    return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-        className: "cards-list",
-        children: Cards.map((card)=>{
-            return /*#__PURE__*/ (0, _react.createElement)(RestaruantCard, {
-                ...card,
-                key: card.id,
-                __source: {
-                    fileName: "App.js",
-                    lineNumber: 201,
-                    columnNumber: 28
-                },
-                __self: undefined
-            });
-        })
+_c = Header;
+const Body = ()=>{
+    return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h1", {
+        children: "Body"
     }, void 0, false, {
         fileName: "App.js",
-        lineNumber: 186,
-        columnNumber: 9
+        lineNumber: 34,
+        columnNumber: 12
     }, undefined);
 };
-_c2 = BodyComponent;
-const FooterComponent = ()=>{
+_c1 = Body;
+const Footer = ()=>{
     return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h1", {
         children: "Footer"
     }, void 0, false, {
         fileName: "App.js",
-        lineNumber: 212,
-        columnNumber: 9
+        lineNumber: 37,
+        columnNumber: 12
     }, undefined);
 };
-_c3 = FooterComponent;
-const AppLayout = ()=>{
+_c2 = Footer;
+const App = ()=>{
     return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _jsxDevRuntime.Fragment), {
         children: [
-            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)(HeaderComponent, {}, void 0, false, {
+            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)(Header, {}, void 0, false, {
                 fileName: "App.js",
-                lineNumber: 231,
-                columnNumber: 5
+                lineNumber: 46,
+                columnNumber: 9
             }, undefined),
-            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)(BodyComponent, {}, void 0, false, {
+            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)(Body, {}, void 0, false, {
                 fileName: "App.js",
-                lineNumber: 232,
-                columnNumber: 5
+                lineNumber: 47,
+                columnNumber: 9
             }, undefined),
-            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)(FooterComponent, {}, void 0, false, {
+            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)(Footer, {}, void 0, false, {
                 fileName: "App.js",
-                lineNumber: 233,
-                columnNumber: 5
+                lineNumber: 48,
+                columnNumber: 9
             }, undefined)
         ]
     }, void 0, true);
 };
-_c4 = AppLayout;
+_c3 = App;
 const root = (0, _clientDefault.default).createRoot(document.getElementById("root"));
-root.render(/*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)(AppLayout, {}, void 0, false, {
+root.render(/*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)(App, {}, void 0, false, {
     fileName: "App.js",
-    lineNumber: 238,
+    lineNumber: 53,
     columnNumber: 13
 }, undefined));
-var _c, _c1, _c2, _c3, _c4;
-$RefreshReg$(_c, "HeaderComponent");
-$RefreshReg$(_c1, "RestaruantCard");
-$RefreshReg$(_c2, "BodyComponent");
-$RefreshReg$(_c3, "FooterComponent");
-$RefreshReg$(_c4, "AppLayout");
+var _c, _c1, _c2, _c3;
+$RefreshReg$(_c, "Header");
+$RefreshReg$(_c1, "Body");
+$RefreshReg$(_c2, "Footer");
+$RefreshReg$(_c3, "App");
 
   $parcel$ReactRefreshHelpers$c1db.postlude(module);
 } finally {
@@ -27598,6 +27436,6 @@ module.exports = require("ee51401569654d91");
     exports.jsxDEV = jsxDEV$1;
 })();
 
-},{"58362d9d82be395f":"21dqq"}]},["j2WyO","1xC6H","2Ew96"], "2Ew96", "parcelRequire38a5")
+},{"58362d9d82be395f":"21dqq"}]},["jJWSB","1xC6H","2Ew96"], "2Ew96", "parcelRequire38a5")
 
 //# sourceMappingURL=index.7826abd7.js.map
