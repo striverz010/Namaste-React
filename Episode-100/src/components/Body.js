@@ -1,6 +1,6 @@
 import RestaurantCard from "./RestaurantCard";
 import { RestaurantCardsList } from "../config";
-import {useState} from "react";
+import {useState,useEffect} from "react";
 
 
 
@@ -11,12 +11,43 @@ function filterData(searchText,restaurants){
 
 }
 
+
+
 const Body=()=>{
 
+  //console.log("hai");
 
- // const [click,setClick]=useState("");
+
   const [searchText,setSearchText]=useState("");
   const [restaurants,setRestaurants]=useState(RestaurantCardsList);
+
+ 
+
+   useEffect(()=>{
+    //calling or fetching the API
+    getRestaurants();
+   })
+
+   async function getRestaurants() {
+    try {
+      const data = await fetch("https://www.swiggy.com/dapi/restaurants/list/v5?lat=17.406498&lng=78.47724389999999&is-seo-homepage-enabled=true&page_type=DESKTOP_WEB_LISTING");
+      const json = await data.json();
+  
+      // Ensure that json.data.cards[0].card is an array
+      const restaurantsArray = json.data.cards[0]?.card;
+  
+      setRestaurants(restaurantsArray);
+      console.log(restaurantsArray);
+    } catch (error) {
+      console.error("Error fetching restaurant data:", error);
+    }
+  }
+
+ 
+ 
+
+
+
 
   
 
@@ -42,23 +73,13 @@ const Body=()=>{
        setRestaurants(data);
       }}>search</button>
 
-      {/* Toogling the bits...
-      <h1>{click}</h1>
-      <button onClick={()=>{
-
-        if(click==="false"){
-          setClick("true")
-
-        }
-        else{
-          setClick("false");
-        }
-      }}> search</button> */}
+      
 
         <div className="body">
           {
             restaurants.map((Card)=>{
                 return <RestaurantCard {...Card} key={Card.id}/>
+               
                 
             })
           }

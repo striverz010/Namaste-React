@@ -27476,9 +27476,25 @@ function filterData(searchText, restaurants) {
 }
 const Body = ()=>{
     _s();
-    // const [click,setClick]=useState("");
+    //console.log("hai");
     const [searchText, setSearchText] = (0, _react.useState)("");
     const [restaurants, setRestaurants] = (0, _react.useState)((0, _config.RestaurantCardsList));
+    (0, _react.useEffect)(()=>{
+        //calling or fetching the API
+        getRestaurants();
+    });
+    async function getRestaurants() {
+        try {
+            const data = await fetch("https://www.swiggy.com/dapi/restaurants/list/v5?lat=17.406498&lng=78.47724389999999&is-seo-homepage-enabled=true&page_type=DESKTOP_WEB_LISTING");
+            const json = await data.json();
+            // Ensure that json.data.cards[0].card is an array
+            const restaurantsArray = json.data.cards[0]?.card;
+            setRestaurants(restaurantsArray);
+            console.log(restaurantsArray);
+        } catch (error) {
+            console.error("Error fetching restaurant data:", error);
+        }
+    }
     return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _jsxDevRuntime.Fragment), {
         children: [
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("input", {
@@ -27491,7 +27507,7 @@ const Body = ()=>{
                 }
             }, void 0, false, {
                 fileName: "src/components/Body.js",
-                lineNumber: 27,
+                lineNumber: 58,
                 columnNumber: 7
             }, undefined),
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("button", {
@@ -27502,7 +27518,7 @@ const Body = ()=>{
                 children: "search"
             }, void 0, false, {
                 fileName: "src/components/Body.js",
-                lineNumber: 39,
+                lineNumber: 70,
                 columnNumber: 7
             }, undefined),
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
@@ -27513,7 +27529,7 @@ const Body = ()=>{
                         key: Card.id,
                         __source: {
                             fileName: "src/components/Body.js",
-                            lineNumber: 61,
+                            lineNumber: 81,
                             columnNumber: 24
                         },
                         __self: undefined
@@ -27521,13 +27537,13 @@ const Body = ()=>{
                 })
             }, void 0, false, {
                 fileName: "src/components/Body.js",
-                lineNumber: 58,
+                lineNumber: 78,
                 columnNumber: 9
             }, undefined)
         ]
     }, void 0, true);
 };
-_s(Body, "O824ifPFQ6Efo9NG+cH567s90vI=");
+_s(Body, "zwjbw3oIOmv7tECAHbUBhjaHVnQ=");
 _c = Body;
 exports.default = Body;
 var _c;
@@ -27538,7 +27554,85 @@ $RefreshReg$(_c, "Body");
   window.$RefreshReg$ = prevRefreshReg;
   window.$RefreshSig$ = prevRefreshSig;
 }
-},{"react/jsx-dev-runtime":"iTorj","./RestaurantCard":"bMboU","../config":"jtCLN","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru","react":"21dqq"}],"bMboU":[function(require,module,exports) {
+},{"react/jsx-dev-runtime":"iTorj","../config":"jtCLN","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru","react":"21dqq","./RestaurantCard":"bMboU"}],"jtCLN":[function(require,module,exports) {
+var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+parcelHelpers.export(exports, "image_cdn", ()=>image_cdn);
+parcelHelpers.export(exports, "RestaurantCardsList", ()=>RestaurantCardsList);
+const image_cdn = "https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_660/";
+const RestaurantCardsList = [
+    {
+        "id": "34428",
+        "name": "Varalakshmi Tiffins",
+        "cloudinaryImageId": "8523266de1213e8ea57e5df4eedf747e",
+        "locality": "Banjara Hills",
+        "areaName": "Banjara Hills",
+        "costForTwo": "\u20B9150 for two",
+        "cuisines": [
+            "South Indian"
+        ],
+        "avgRating": 4.5
+    },
+    {
+        "id": "22413",
+        "name": "Lo! - Low Carb and Keto Foods",
+        "cloudinaryImageId": "w1gfuoz0ipxlcggsomsr",
+        "locality": "Devera Konda Basti",
+        "areaName": "Banjara Hills",
+        "costForTwo": "\u20B9150 for two",
+        "cuisines": [
+            "Healthy Food",
+            "Keto",
+            "North Indian",
+            "Continental"
+        ],
+        "avgRating": 4.4
+    },
+    // {
+    //     "id": "44287",
+    //      "name": "Varalakshmi Tiffins",
+    //      "cloudinaryImageId": "8523266de1213e8ea57e5df4eedf747e",
+    //      "locality": "Banjara Hills",
+    //      "areaName": "Banjara Hills",
+    //      "costForTwo": "₹150 for two",
+    //      "cuisines": [
+    //        "South Indian"
+    //      ],
+    //      "avgRating": 4.5
+    // },
+    // {
+    //     "id": "58215",
+    //                   "name": "Samosa Singh",
+    //                   "cloudinaryImageId": "77baefd8a5e319c828b4d7dff7260644",
+    //                   "locality": "B K Guda",
+    //                   "areaName": "Ameerpet",
+    //                   "costForTwo": "₹150 for two",
+    //                   "cuisines": [
+    //                     "Snacks",
+    //                     "North Indian",
+    //                     "Desserts",
+    //                     "Beverages",
+    //                     "Chaat"
+    //                   ],
+    //                   "avgRating": 4.1,
+    // },
+    {
+        "id": "6498",
+        "name": "Hotel Sandarshini",
+        "cloudinaryImageId": "9f5783b9975a73ec001560327065a01c",
+        "locality": "Road No 1",
+        "areaName": "Masab Tank",
+        "costForTwo": "\u20B9200 for two",
+        "cuisines": [
+            "Chinese",
+            "South Indian",
+            "Juices"
+        ],
+        "avgRating": 4.4
+    }
+];
+
+},{"@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3"}],"bMboU":[function(require,module,exports) {
 var $parcel$ReactRefreshHelpers$ffb1 = require("@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
 var prevRefreshReg = window.$RefreshReg$;
 var prevRefreshSig = window.$RefreshSig$;
@@ -27598,159 +27692,6 @@ $RefreshReg$(_c, "RestaurantCard");
   window.$RefreshReg$ = prevRefreshReg;
   window.$RefreshSig$ = prevRefreshSig;
 }
-},{"react/jsx-dev-runtime":"iTorj","../config":"jtCLN","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru"}],"jtCLN":[function(require,module,exports) {
-var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
-parcelHelpers.defineInteropFlag(exports);
-parcelHelpers.export(exports, "image_cdn", ()=>image_cdn);
-parcelHelpers.export(exports, "RestaurantCardsList", ()=>RestaurantCardsList);
-const image_cdn = "https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_660/";
-const RestaurantCardsList = [
-    {
-        "id": "344287",
-        "name": "Varalakshmi Tiffins",
-        "cloudinaryImageId": "8523266de1213e8ea57e5df4eedf747e",
-        "locality": "Banjara Hills",
-        "areaName": "Banjara Hills",
-        "costForTwo": "\u20B9150 for two",
-        "cuisines": [
-            "South Indian"
-        ],
-        "avgRating": 4.5
-    },
-    {
-        "id": "224130",
-        "name": "Lo! - Low Carb and Keto Foods",
-        "cloudinaryImageId": "w1gfuoz0ipxlcggsomsr",
-        "locality": "Devera Konda Basti",
-        "areaName": "Banjara Hills",
-        "costForTwo": "\u20B9150 for two",
-        "cuisines": [
-            "Healthy Food",
-            "Keto",
-            "North Indian",
-            "Continental"
-        ],
-        "avgRating": 4.4
-    },
-    {
-        "id": "344287",
-        "name": "Varalakshmi Tiffins",
-        "cloudinaryImageId": "8523266de1213e8ea57e5df4eedf747e",
-        "locality": "Banjara Hills",
-        "areaName": "Banjara Hills",
-        "costForTwo": "\u20B9150 for two",
-        "cuisines": [
-            "South Indian"
-        ],
-        "avgRating": 4.5
-    },
-    {
-        "id": "258215",
-        "name": "Samosa Singh",
-        "cloudinaryImageId": "77baefd8a5e319c828b4d7dff7260644",
-        "locality": "B K Guda",
-        "areaName": "Ameerpet",
-        "costForTwo": "\u20B9150 for two",
-        "cuisines": [
-            "Snacks",
-            "North Indian",
-            "Desserts",
-            "Beverages",
-            "Chaat"
-        ],
-        "avgRating": 4.1
-    },
-    {
-        "id": "6498",
-        "name": "Hotel Sandarshini",
-        "cloudinaryImageId": "9f5783b9975a73ec001560327065a01c",
-        "locality": "Road No 1",
-        "areaName": "Masab Tank",
-        "costForTwo": "\u20B9200 for two",
-        "cuisines": [
-            "Chinese",
-            "South Indian",
-            "Juices"
-        ],
-        "avgRating": 4.4
-    },
-    {
-        "id": "124165",
-        "name": "Starbucks Coffee",
-        "cloudinaryImageId": "182191ab163770437b62861a6f987709",
-        "locality": "GVK1 Mall",
-        "areaName": "Banjara Hills",
-        "costForTwo": "\u20B9400 for two",
-        "cuisines": [
-            "Beverages",
-            "Cafe",
-            "Snacks",
-            "Desserts",
-            "Bakery",
-            "Ice Cream"
-        ],
-        "avgRating": 4.3
-    },
-    {
-        "id": "344287",
-        "name": "Varalakshmi Tiffins",
-        "cloudinaryImageId": "8523266de1213e8ea57e5df4eedf747e",
-        "locality": "Banjara Hills",
-        "areaName": "Banjara Hills",
-        "costForTwo": "\u20B9150 for two",
-        "cuisines": [
-            "South Indian"
-        ],
-        "avgRating": 4.5
-    },
-    {
-        "id": "124165",
-        "name": "Starbucks Coffee",
-        "cloudinaryImageId": "182191ab163770437b62861a6f987709",
-        "locality": "GVK1 Mall",
-        "areaName": "Banjara Hills",
-        "costForTwo": "\u20B9400 for two",
-        "cuisines": [
-            "Beverages",
-            "Cafe",
-            "Snacks",
-            "Desserts",
-            "Bakery",
-            "Ice Cream"
-        ],
-        "avgRating": 4.3
-    },
-    {
-        "id": "344287",
-        "name": "Varalakshmi Tiffins",
-        "cloudinaryImageId": "8523266de1213e8ea57e5df4eedf747e",
-        "locality": "Banjara Hills",
-        "areaName": "Banjara Hills",
-        "costForTwo": "\u20B9150 for two",
-        "cuisines": [
-            "South Indian"
-        ],
-        "avgRating": 4.5
-    },
-    {
-        "id": "124165",
-        "name": "Starbucks Coffee",
-        "cloudinaryImageId": "182191ab163770437b62861a6f987709",
-        "locality": "GVK1 Mall",
-        "areaName": "Banjara Hills",
-        "costForTwo": "\u20B9400 for two",
-        "cuisines": [
-            "Beverages",
-            "Cafe",
-            "Snacks",
-            "Desserts",
-            "Bakery",
-            "Ice Cream"
-        ],
-        "avgRating": 4.3
-    }
-];
-
-},{"@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3"}]},["9A7zD","1xC6H","2kQhy"], "2kQhy", "parcelRequire38a5")
+},{"react/jsx-dev-runtime":"iTorj","../config":"jtCLN","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru"}]},["9A7zD","1xC6H","2kQhy"], "2kQhy", "parcelRequire38a5")
 
 //# sourceMappingURL=index.7271efb6.js.map
