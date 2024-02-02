@@ -1,0 +1,60 @@
+.header{
+    margin: 10px;
+    padding: 10px;
+    border: solid black 1px;
+    display: flex;
+    justify-content: space-between;
+    border-radius: 10px;
+    background-color: #5adeff;
+}
+#logo{
+    width: 100px;
+    border: solid orange 2px;
+    border-radius: 50%;
+}
+.nav-items >ul {
+    display: flex;
+}
+.nav-items >ul >li{
+    list-style-type: none;
+    margin-right: 15px;
+    font-weight: 500;
+    font-size: large;
+    cursor: pointer;
+}
+.nav-items >ul >li:hover{
+    color: orange;
+}
+.body{
+    margin:10px;
+    padding: 10px;
+    border: solid black 1px;
+    border-radius: 10px;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+
+}
+.restaurant-card{
+    border: solid black 2px;
+    width: 200px;
+    border-radius: 10px;
+    padding: 10px;
+    margin-top: 10px;
+
+}
+.restaurant-card >img{
+    width: 100%;
+    border-radius: 12px;
+}
+
+.footer{
+
+    margin:10px;
+    padding: 10px;
+    border: solid black 1px;
+    border-radius: 10px;
+    background-color:black;
+    color: #fff;
+
+}
