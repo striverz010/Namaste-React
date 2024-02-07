@@ -1,11 +1,10 @@
 .header{
-    margin: 10px;
     padding: 10px;
+    margin: 10px;
     border: solid black 1px;
+    border-radius:10px;
     display: flex;
     justify-content: space-between;
-    border-radius: 10px;
-    background-color: #5adeff;
 }
 #logo{
     width: 100px;
@@ -16,45 +15,36 @@
     display: flex;
 }
 .nav-items >ul >li{
-    list-style-type: none;
-    margin-right: 15px;
-    font-weight: 500;
-    font-size: large;
-    cursor: pointer;
-}
-.nav-items >ul >li:hover{
-    color: orange;
+   list-style-type: none;
+   margin-right: 10px;
+   font-size: large;
+   font-weight: 525; 
 }
 .body{
-    margin:10px;
     padding: 10px;
+    margin: 10px;
     border: solid black 1px;
     border-radius: 10px;
     display: flex;
     justify-content: space-between;
-    flex-wrap: wrap;
-
 }
-.restaurant-card{
-    border: solid black 2px;
-    width: 200px;
-    border-radius: 10px;
+.resturant-card{
     padding: 10px;
-    margin-top: 10px;
+    width: 200px;
+    border: solid black 2px;
+    border-radius: 10px;
 
 }
-.restaurant-card >img{
+.resturant-card >img{
     width: 100%;
-    border-radius: 12px;
+    border-radius: 10px;
 }
 
 .footer{
-
-    margin:10px;
     padding: 10px;
-    border: solid black 1px;
+    margin: 10px;
+    border: solid black 2px;
     border-radius: 10px;
-    background-color:black;
-    color: #fff;
-
+    background-color: black;
+    color: white;
 }
