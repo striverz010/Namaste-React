@@ -9,6 +9,33 @@ const start = <h1> Here it comes, JSX </h1>
 Although this is a simple JSX in React, the browser does not recognize it since it is not genuine Javascript code. That's why an HTML tag is applied to a variable that isn't a string but rather HTML code. So we utilize a tool like Babel, a JavaScript compiler/transpiler, to turn it into browser-friendly JavaScript code.
 
 ## Q) Is `ES6` mandatory for React?
+No, ES6 (ECMAScript 2015) is not mandatory for React, but it is highly recommended. React itself is a JavaScript library, and you can use it with any version of JavaScript, including ES5. However, using ES6 and its subsequent versions brings several advantages and features that make the development process more convenient and efficient.
+
+ES6 introduces a variety of syntax improvements and new features, such as arrow functions, classes, destructuring assignment, let and const declarations, template literals, and more. Many of these features can enhance the readability and maintainability of your React code.
+
+Moreover, some React features, like the use of JSX (JavaScript XML), are more commonly associated with ES6 and later versions. JSX is a syntax extension that allows you to write XML/HTML-like code within your JavaScript, making it easier to define React components.
+
+# {TitleComponent} vs {<TitleComponent/>} vs {<TitleComponent></TitleComponent>} in JSX.
+### {TitleComponent}:
+Placing the react element inside the react component this syntax is used
+```
+const MyComponent = () => {
+  const TitleComponent = <h1>Hello, World!</h1>;
+
+  return (
+    <div>
+      {TitleComponent}
+      {/* Other JSX elements */}
+    </div>
+  );
+};
+```
+
+
+## {<TitleComponent/>} vs {<TitleComponent></TitleComponent>}:
+
+The both the components are used to place the components inside the components
+
 
 ## Q) How can I write `comments` in JSX?
 ```
