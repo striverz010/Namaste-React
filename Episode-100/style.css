@@ -27,14 +27,19 @@
     border-radius: 10px;
     display: flex;
     justify-content: space-between;
+    flex-wrap: wrap;
+    
 }
 .resturant-card{
     padding: 10px;
     width: 200px;
     border: solid black 2px;
     border-radius: 10px;
+    margin-top:10px;
+    
 
 }
+
 .resturant-card >img{
     width: 100%;
     border-radius: 10px;
@@ -47,4 +52,12 @@
     border-radius: 10px;
     background-color: black;
     color: white;
+}
+button{
+    color: white;
+    background-color: black;
+    border-radius: 20px;
+    margin-left: 3px;
+    cursor: pointer;
+    padding: 4px;
 }

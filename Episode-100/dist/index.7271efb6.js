@@ -2995,7 +2995,7 @@ $RefreshReg$(_c, "App");
   window.$RefreshReg$ = prevRefreshReg;
   window.$RefreshSig$ = prevRefreshSig;
 }
-},{"react/jsx-dev-runtime":"iTorj","react":"21dqq","react-dom/client":"lOjBx","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru","./components/Header":"knC38","./components/Footer.jsx":"2OVeV","./config.js":"jtCLN","./components/Body.jsx":"hHUrP"}],"iTorj":[function(require,module,exports) {
+},{"react/jsx-dev-runtime":"iTorj","react":"21dqq","react-dom/client":"lOjBx","./components/Header":"knC38","./components/Body.jsx":"hHUrP","./components/Footer.jsx":"2OVeV","./config.js":"jtCLN","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru"}],"iTorj":[function(require,module,exports) {
 "use strict";
 module.exports = require("ee51401569654d91");
 
@@ -27182,7 +27182,89 @@ module.exports = require("ef03b89c8fe2794e");
     /* global __REACT_DEVTOOLS_GLOBAL_HOOK__ */ if (typeof __REACT_DEVTOOLS_GLOBAL_HOOK__ !== "undefined" && typeof __REACT_DEVTOOLS_GLOBAL_HOOK__.registerInternalModuleStop === "function") __REACT_DEVTOOLS_GLOBAL_HOOK__.registerInternalModuleStop(new Error());
 })();
 
-},{}],"gkKU3":[function(require,module,exports) {
+},{}],"knC38":[function(require,module,exports) {
+var $parcel$ReactRefreshHelpers$e807 = require("@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
+var prevRefreshReg = window.$RefreshReg$;
+var prevRefreshSig = window.$RefreshSig$;
+$parcel$ReactRefreshHelpers$e807.prelude(module);
+
+try {
+var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+var _jsxDevRuntime = require("react/jsx-dev-runtime");
+const Header = ()=>{
+    return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+        className: "header",
+        children: [
+            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("img", {
+                id: "logo",
+                src: "https://play-lh.googleusercontent.com/iwGG0ojU1j43ZEEGiibNmLqd4Ha6eRtAjFlG2WE7uV8vUZTsrP1GDRwvA_aPJghkCqc"
+            }, void 0, false, {
+                fileName: "src/components/Header.jsx",
+                lineNumber: 4,
+                columnNumber: 13
+            }, undefined),
+            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                className: "nav-items",
+                children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("ul", {
+                    children: [
+                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("li", {
+                            children: "Home"
+                        }, void 0, false, {
+                            fileName: "src/components/Header.jsx",
+                            lineNumber: 8,
+                            columnNumber: 21
+                        }, undefined),
+                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("li", {
+                            children: "About"
+                        }, void 0, false, {
+                            fileName: "src/components/Header.jsx",
+                            lineNumber: 9,
+                            columnNumber: 21
+                        }, undefined),
+                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("li", {
+                            children: "Contact"
+                        }, void 0, false, {
+                            fileName: "src/components/Header.jsx",
+                            lineNumber: 10,
+                            columnNumber: 21
+                        }, undefined),
+                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("li", {
+                            children: "Cart"
+                        }, void 0, false, {
+                            fileName: "src/components/Header.jsx",
+                            lineNumber: 11,
+                            columnNumber: 21
+                        }, undefined)
+                    ]
+                }, void 0, true, {
+                    fileName: "src/components/Header.jsx",
+                    lineNumber: 7,
+                    columnNumber: 17
+                }, undefined)
+            }, void 0, false, {
+                fileName: "src/components/Header.jsx",
+                lineNumber: 6,
+                columnNumber: 13
+            }, undefined)
+        ]
+    }, void 0, true, {
+        fileName: "src/components/Header.jsx",
+        lineNumber: 3,
+        columnNumber: 9
+    }, undefined);
+};
+_c = Header;
+exports.default = Header;
+var _c;
+$RefreshReg$(_c, "Header");
+
+  $parcel$ReactRefreshHelpers$e807.postlude(module);
+} finally {
+  window.$RefreshReg$ = prevRefreshReg;
+  window.$RefreshSig$ = prevRefreshSig;
+}
+},{"react/jsx-dev-runtime":"iTorj","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru"}],"gkKU3":[function(require,module,exports) {
 exports.interopDefault = function(a) {
     return a && a.__esModule ? a : {
         default: a
@@ -27350,206 +27432,7 @@ function registerExportsForReactRefresh(module1) {
     }
 }
 
-},{"7422ead32dcc1e6b":"786KC"}],"knC38":[function(require,module,exports) {
-var $parcel$ReactRefreshHelpers$e807 = require("@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
-var prevRefreshReg = window.$RefreshReg$;
-var prevRefreshSig = window.$RefreshSig$;
-$parcel$ReactRefreshHelpers$e807.prelude(module);
-
-try {
-var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
-parcelHelpers.defineInteropFlag(exports);
-var _jsxDevRuntime = require("react/jsx-dev-runtime");
-const Header = ()=>{
-    return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-        className: "header",
-        children: [
-            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("img", {
-                id: "logo",
-                src: "https://play-lh.googleusercontent.com/iwGG0ojU1j43ZEEGiibNmLqd4Ha6eRtAjFlG2WE7uV8vUZTsrP1GDRwvA_aPJghkCqc"
-            }, void 0, false, {
-                fileName: "src/components/Header.jsx",
-                lineNumber: 4,
-                columnNumber: 13
-            }, undefined),
-            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                className: "nav-items",
-                children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("ul", {
-                    children: [
-                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("li", {
-                            children: "Home"
-                        }, void 0, false, {
-                            fileName: "src/components/Header.jsx",
-                            lineNumber: 8,
-                            columnNumber: 21
-                        }, undefined),
-                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("li", {
-                            children: "About"
-                        }, void 0, false, {
-                            fileName: "src/components/Header.jsx",
-                            lineNumber: 9,
-                            columnNumber: 21
-                        }, undefined),
-                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("li", {
-                            children: "Contact"
-                        }, void 0, false, {
-                            fileName: "src/components/Header.jsx",
-                            lineNumber: 10,
-                            columnNumber: 21
-                        }, undefined),
-                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("li", {
-                            children: "Cart"
-                        }, void 0, false, {
-                            fileName: "src/components/Header.jsx",
-                            lineNumber: 11,
-                            columnNumber: 21
-                        }, undefined)
-                    ]
-                }, void 0, true, {
-                    fileName: "src/components/Header.jsx",
-                    lineNumber: 7,
-                    columnNumber: 17
-                }, undefined)
-            }, void 0, false, {
-                fileName: "src/components/Header.jsx",
-                lineNumber: 6,
-                columnNumber: 13
-            }, undefined)
-        ]
-    }, void 0, true, {
-        fileName: "src/components/Header.jsx",
-        lineNumber: 3,
-        columnNumber: 9
-    }, undefined);
-};
-_c = Header;
-exports.default = Header;
-var _c;
-$RefreshReg$(_c, "Header");
-
-  $parcel$ReactRefreshHelpers$e807.postlude(module);
-} finally {
-  window.$RefreshReg$ = prevRefreshReg;
-  window.$RefreshSig$ = prevRefreshSig;
-}
-},{"react/jsx-dev-runtime":"iTorj","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru"}],"2OVeV":[function(require,module,exports) {
-var $parcel$ReactRefreshHelpers$66c2 = require("@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
-var prevRefreshReg = window.$RefreshReg$;
-var prevRefreshSig = window.$RefreshSig$;
-$parcel$ReactRefreshHelpers$66c2.prelude(module);
-
-try {
-var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
-parcelHelpers.defineInteropFlag(exports);
-var _jsxDevRuntime = require("react/jsx-dev-runtime");
-const Footer = ()=>{
-    return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-        className: "footer",
-        children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h1", {
-            align: "center",
-            children: "S T R I V E R "
-        }, void 0, false, {
-            fileName: "src/components/Footer.jsx",
-            lineNumber: 4,
-            columnNumber: 13
-        }, undefined)
-    }, void 0, false, {
-        fileName: "src/components/Footer.jsx",
-        lineNumber: 3,
-        columnNumber: 9
-    }, undefined);
-};
-_c = Footer;
-exports.default = Footer;
-var _c;
-$RefreshReg$(_c, "Footer");
-
-  $parcel$ReactRefreshHelpers$66c2.postlude(module);
-} finally {
-  window.$RefreshReg$ = prevRefreshReg;
-  window.$RefreshSig$ = prevRefreshSig;
-}
-},{"react/jsx-dev-runtime":"iTorj","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru"}],"jtCLN":[function(require,module,exports) {
-var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
-parcelHelpers.defineInteropFlag(exports);
-parcelHelpers.export(exports, "img_cdn", ()=>img_cdn);
-parcelHelpers.export(exports, "RestaurantCardsList", ()=>RestaurantCardsList);
-const img_cdn = "https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_660/";
-const RestaurantCardsList = [
-    {
-        "id": "91408",
-        "name": "Mohammed's Shawarma",
-        "cloudinaryImageId": "gvzgp3zltwde3cvdm6j7",
-        "locality": "Nanal nagar",
-        "areaName": "Mehdipatnam",
-        "costForTwo": "\u20B9150 for two",
-        "cuisines": [
-            "Arabian"
-        ],
-        "avgRating": 4.2
-    },
-    {
-        "id": "17105",
-        "name": "KFC",
-        "cloudinaryImageId": "f01666ac73626461d7455d9c24005cd4",
-        "locality": "Mehdipatnam",
-        "areaName": "Mehdipatnam",
-        "costForTwo": "\u20B9400 for two",
-        "cuisines": [
-            "Burgers",
-            "Biryani",
-            "American",
-            "Snacks",
-            "Fast Food"
-        ],
-        "avgRating": 4.2
-    },
-    {
-        "id": "45767",
-        "name": "Minerva Sweets",
-        "cloudinaryImageId": "rhhspxbln3f0fojleu0p",
-        "locality": "Opp Sarojini Devi Eye Hospital",
-        "areaName": "Humayun Nagar",
-        "costForTwo": "\u20B9200 for two",
-        "cuisines": [
-            "Sweets",
-            "Desserts",
-            "Snacks",
-            "Fast Food"
-        ],
-        "avgRating": 4.4
-    },
-    {
-        "id": "139790",
-        "name": "Sri Udupi Grand",
-        "cloudinaryImageId": "odb2avagielzetn1qjcn",
-        "locality": "Mehdipatnam",
-        "areaName": "Attapur",
-        "costForTwo": "\u20B9300 for two",
-        "cuisines": [
-            "South Indian",
-            "Chinese",
-            "Indian"
-        ],
-        "avgRating": 4.2
-    },
-    {
-        "id": "27456",
-        "name": "Rambharose - Bhattad Ki Idli",
-        "cloudinaryImageId": "568af3b3862bc0bfdf0c30c18da08ff0",
-        "locality": "New Malakpet",
-        "areaName": "Attapur",
-        "costForTwo": "\u20B9150 for two",
-        "cuisines": [
-            "South Indian",
-            "Snacks",
-            "Indian"
-        ],
-        "avgRating": 4.3
-    }
-];
-
-},{"@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3"}],"hHUrP":[function(require,module,exports) {
+},{"7422ead32dcc1e6b":"786KC"}],"hHUrP":[function(require,module,exports) {
 var $parcel$ReactRefreshHelpers$9ffe = require("@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
 var prevRefreshReg = window.$RefreshReg$;
 var prevRefreshSig = window.$RefreshSig$;
@@ -27563,15 +27446,33 @@ var _react = require("react");
 var _config = require("../config");
 var _restaurantcard = require("./Restaurantcard");
 var _restaurantcardDefault = parcelHelpers.interopDefault(_restaurantcard);
+var _shimmerUI = require("./ShimmerUI");
+var _shimmerUIDefault = parcelHelpers.interopDefault(_shimmerUI);
 var _s = $RefreshSig$();
-function fitlerData(searchText, restaurants) {
-    return restaurants.filter((restaurant)=>restaurant.name.includes(searchText));
+function fitlerData(searchText, allRestaurants) {
+    return allRestaurants.filter((restaurant)=>restaurant?.name?.toLowerCase()?.includes(searchText.toLowerCase()));
 }
 const Body = ()=>{
     _s();
     const [searchText, setSearchText] = (0, _react.useState)("");
-    const [restaurants, setRestaurants] = (0, _react.useState)((0, _config.RestaurantCardsList));
-    return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _jsxDevRuntime.Fragment), {
+    const [filteredRestaurants, setFilteredRestaurants] = (0, _react.useState)([]);
+    const [allRestaurants, setAllRestaurants] = (0, _react.useState)([]);
+    (0, _react.useEffect)(()=>{
+        getRestaurants();
+    }, []);
+    async function getRestaurants() {
+        const data = await fetch("https://www.swiggy.com/dapi/restaurants/list/v5?lat=28.6126255&lng=77.04108959999999&page_type=DESKTOP_WEB_LISTING");
+        const json = await data.json();
+        setAllRestaurants(json?.data?.cards[3].card?.card?.gridElements?.infoWithStyle?.restaurants);
+        setFilteredRestaurants(json?.data?.cards[3].card?.card?.gridElements?.infoWithStyle?.restaurants);
+        console.log(json);
+    }
+    if (allRestaurants?.length === 0) return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _shimmerUIDefault.default), {}, void 0, false, {
+        fileName: "src/components/Body.jsx",
+        lineNumber: 34,
+        columnNumber: 42
+    }, undefined);
+    else return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _jsxDevRuntime.Fragment), {
         children: [
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("input", {
                 className: "search-bar",
@@ -27583,30 +27484,30 @@ const Body = ()=>{
                 }
             }, void 0, false, {
                 fileName: "src/components/Body.jsx",
-                lineNumber: 18,
+                lineNumber: 41,
                 columnNumber: 9
             }, undefined),
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("button", {
                 onClick: ()=>{
                     //filter the data
-                    const data = fitlerData(searchText, restaurants);
-                    setRestaurants(data);
+                    const data = fitlerData(searchText, allRestaurants);
+                    setFilteredRestaurants(data);
                 },
                 children: "Submit"
             }, void 0, false, {
                 fileName: "src/components/Body.jsx",
-                lineNumber: 31,
+                lineNumber: 53,
                 columnNumber: 9
             }, undefined),
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
                 className: "body",
-                children: restaurants.map((restaurantcard)=>{
+                children: filteredRestaurants.map((restaurantcard)=>{
                     return /*#__PURE__*/ (0, _react.createElement)((0, _restaurantcardDefault.default), {
-                        ...restaurantcard,
-                        key: restaurantcard.id,
+                        ...restaurantcard.info,
+                        key: restaurantcard.info.id,
                         __source: {
                             fileName: "src/components/Body.jsx",
-                            lineNumber: 50,
+                            lineNumber: 75,
                             columnNumber: 25
                         },
                         __self: undefined
@@ -27614,13 +27515,13 @@ const Body = ()=>{
                 })
             }, void 0, false, {
                 fileName: "src/components/Body.jsx",
-                lineNumber: 44,
+                lineNumber: 70,
                 columnNumber: 6
             }, undefined)
         ]
     }, void 0, true);
 };
-_s(Body, "O824ifPFQ6Efo9NG+cH567s90vI=");
+_s(Body, "K9X2HpR9qvFACQOw78GIkp2EN48=");
 _c = Body;
 exports.default = Body;
 var _c;
@@ -27631,7 +27532,97 @@ $RefreshReg$(_c, "Body");
   window.$RefreshReg$ = prevRefreshReg;
   window.$RefreshSig$ = prevRefreshSig;
 }
-},{"react/jsx-dev-runtime":"iTorj","react":"21dqq","../config":"jtCLN","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru","./Restaurantcard":"isvVm"}],"isvVm":[function(require,module,exports) {
+},{"react/jsx-dev-runtime":"iTorj","react":"21dqq","../config":"jtCLN","./Restaurantcard":"isvVm","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru","./ShimmerUI":"PdkBp"}],"jtCLN":[function(require,module,exports) {
+var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+parcelHelpers.export(exports, "img_cdn", ()=>img_cdn);
+parcelHelpers.export(exports, "RestaurantCardsList", ()=>RestaurantCardsList);
+const img_cdn = "https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_660/";
+const RestaurantCardsList = [
+    {
+        "info": {
+            "id": "91408",
+            "name": "Mohammed's Shawarma",
+            "cloudinaryImageId": "gvzgp3zltwde3cvdm6j7",
+            "locality": "Nanal nagar",
+            "areaName": "Mehdipatnam",
+            "costForTwo": "\u20B9150 for two",
+            "cuisines": [
+                "Arabian"
+            ],
+            "avgRating": 4.2
+        }
+    },
+    {
+        "info": {
+            "id": "17105",
+            "name": "KFC",
+            "cloudinaryImageId": "f01666ac73626461d7455d9c24005cd4",
+            "locality": "Mehdipatnam",
+            "areaName": "Mehdipatnam",
+            "costForTwo": "\u20B9400 for two",
+            "cuisines": [
+                "Burgers",
+                "Biryani",
+                "American",
+                "Snacks",
+                "Fast Food"
+            ],
+            "avgRating": 4.2
+        }
+    },
+    {
+        "info": {
+            "id": "45767",
+            "name": "Minerva Sweets",
+            "cloudinaryImageId": "rhhspxbln3f0fojleu0p",
+            "locality": "Opp Sarojini Devi Eye Hospital",
+            "areaName": "Humayun Nagar",
+            "costForTwo": "\u20B9200 for two",
+            "cuisines": [
+                "Sweets",
+                "Desserts",
+                "Snacks",
+                "Fast Food"
+            ],
+            "avgRating": 4.4
+        }
+    },
+    {
+        "info": {
+            "id": "139790",
+            "name": "Sri Udupi Grand",
+            "cloudinaryImageId": "odb2avagielzetn1qjcn",
+            "locality": "Mehdipatnam",
+            "areaName": "Attapur",
+            "costForTwo": "\u20B9300 for two",
+            "cuisines": [
+                "South Indian",
+                "Chinese",
+                "Indian"
+            ],
+            "avgRating": 4.2
+        }
+    },
+    {
+        "info": {
+            "id": "27456",
+            "name": "Rambharose - Bhattad Ki Idli",
+            "cloudinaryImageId": "568af3b3862bc0bfdf0c30c18da08ff0",
+            "locality": "New Malakpet",
+            "areaName": "Attapur",
+            "costForTwo": "\u20B9150 for two",
+            "cuisines": [
+                "South Indian",
+                "Snacks",
+                "Indian"
+            ],
+            "avgRating": 4.3
+        }
+    }
+];
+
+},{"@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3"}],"isvVm":[function(require,module,exports) {
 var $parcel$ReactRefreshHelpers$31f0 = require("@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
 var prevRefreshReg = window.$RefreshReg$;
 var prevRefreshSig = window.$RefreshSig$;
@@ -27691,6 +27682,72 @@ $RefreshReg$(_c, "RestaurantCard");
   window.$RefreshReg$ = prevRefreshReg;
   window.$RefreshSig$ = prevRefreshSig;
 }
-},{"react/jsx-dev-runtime":"iTorj","../config":"jtCLN","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru"}]},["9A7zD","1xC6H","2kQhy"], "2kQhy", "parcelRequire38a5")
+},{"react/jsx-dev-runtime":"iTorj","../config":"jtCLN","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru"}],"PdkBp":[function(require,module,exports) {
+var $parcel$ReactRefreshHelpers$df11 = require("@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
+var prevRefreshReg = window.$RefreshReg$;
+var prevRefreshSig = window.$RefreshSig$;
+$parcel$ReactRefreshHelpers$df11.prelude(module);
+
+try {
+var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+var _jsxDevRuntime = require("react/jsx-dev-runtime");
+const ShimmerUI = ()=>{
+    return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h1", {
+        children: "Wait please shimmer ui is loading..."
+    }, void 0, false, {
+        fileName: "src/components/ShimmerUI.jsx",
+        lineNumber: 3,
+        columnNumber: 12
+    }, undefined);
+};
+_c = ShimmerUI;
+exports.default = ShimmerUI;
+var _c;
+$RefreshReg$(_c, "ShimmerUI");
+
+  $parcel$ReactRefreshHelpers$df11.postlude(module);
+} finally {
+  window.$RefreshReg$ = prevRefreshReg;
+  window.$RefreshSig$ = prevRefreshSig;
+}
+},{"react/jsx-dev-runtime":"iTorj","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru"}],"2OVeV":[function(require,module,exports) {
+var $parcel$ReactRefreshHelpers$66c2 = require("@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
+var prevRefreshReg = window.$RefreshReg$;
+var prevRefreshSig = window.$RefreshSig$;
+$parcel$ReactRefreshHelpers$66c2.prelude(module);
+
+try {
+var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+var _jsxDevRuntime = require("react/jsx-dev-runtime");
+const Footer = ()=>{
+    return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+        className: "footer",
+        children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h1", {
+            align: "center",
+            children: "S T R I V E R "
+        }, void 0, false, {
+            fileName: "src/components/Footer.jsx",
+            lineNumber: 4,
+            columnNumber: 13
+        }, undefined)
+    }, void 0, false, {
+        fileName: "src/components/Footer.jsx",
+        lineNumber: 3,
+        columnNumber: 9
+    }, undefined);
+};
+_c = Footer;
+exports.default = Footer;
+var _c;
+$RefreshReg$(_c, "Footer");
+
+  $parcel$ReactRefreshHelpers$66c2.postlude(module);
+} finally {
+  window.$RefreshReg$ = prevRefreshReg;
+  window.$RefreshSig$ = prevRefreshSig;
+}
+},{"react/jsx-dev-runtime":"iTorj","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru"}]},["9A7zD","1xC6H","2kQhy"], "2kQhy", "parcelRequire38a5")
 
 //# sourceMappingURL=index.7271efb6.js.map

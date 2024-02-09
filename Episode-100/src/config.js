@@ -1,7 +1,8 @@
 export const img_cdn="https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_660/";
 
 export const RestaurantCardsList=[
-    {
+  
+  {  "info":{
                      "id": "91408",
                       "name": "Mohammed's Shawarma",
                       "cloudinaryImageId": "gvzgp3zltwde3cvdm6j7",
@@ -13,7 +14,9 @@ export const RestaurantCardsList=[
                       ],
                       "avgRating": 4.2,
     },
+  },
     {
+    "info": {
         "id": "17105",
                       "name": "KFC",
                       "cloudinaryImageId": "f01666ac73626461d7455d9c24005cd4",
@@ -29,7 +32,10 @@ export const RestaurantCardsList=[
                       ],
                       "avgRating": 4.2,
     },
-    {
+  },
+  { 
+  "info":{
+    
         "id": "45767",
                       "name": "Minerva Sweets",
                       "cloudinaryImageId": "rhhspxbln3f0fojleu0p",
@@ -44,6 +50,10 @@ export const RestaurantCardsList=[
                       ],
                       "avgRating": 4.4,
     },
+  },
+
+
+    {"info":
     {
         "id": "139790",
                       "name": "Sri Udupi Grand",
@@ -58,6 +68,11 @@ export const RestaurantCardsList=[
                       ],
                       "avgRating": 4.2,
     },
+  },
+
+  {
+    "info":
+  
     {
         "id": "27456",
                       "name": "Rambharose - Bhattad Ki Idli",
@@ -72,6 +87,7 @@ export const RestaurantCardsList=[
                       ],
                       "avgRating": 4.3,
     },
+  }
 
 
 ]
