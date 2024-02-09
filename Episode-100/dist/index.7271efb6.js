@@ -27450,7 +27450,8 @@ var _shimmerUI = require("./ShimmerUI");
 var _shimmerUIDefault = parcelHelpers.interopDefault(_shimmerUI);
 var _s = $RefreshSig$();
 function fitlerData(searchText, allRestaurants) {
-    return allRestaurants.filter((restaurant)=>restaurant?.name?.toLowerCase()?.includes(searchText.toLowerCase()));
+    const data = allRestaurants.filter((restaurant)=>restaurant?.info?.name?.toLowerCase()?.includes(searchText.toLowerCase()));
+    return data;
 }
 const Body = ()=>{
     _s();
@@ -27463,13 +27464,12 @@ const Body = ()=>{
     async function getRestaurants() {
         const data = await fetch("https://www.swiggy.com/dapi/restaurants/list/v5?lat=28.6126255&lng=77.04108959999999&page_type=DESKTOP_WEB_LISTING");
         const json = await data.json();
-        setAllRestaurants(json?.data?.cards[3].card?.card?.gridElements?.infoWithStyle?.restaurants);
-        setFilteredRestaurants(json?.data?.cards[3].card?.card?.gridElements?.infoWithStyle?.restaurants);
-        console.log(json);
+        setAllRestaurants(json?.data?.cards[4].card?.card?.gridElements?.infoWithStyle?.restaurants);
+        setFilteredRestaurants(json?.data?.cards[4].card?.card?.gridElements?.infoWithStyle?.restaurants);
     }
     if (allRestaurants?.length === 0) return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _shimmerUIDefault.default), {}, void 0, false, {
         fileName: "src/components/Body.jsx",
-        lineNumber: 34,
+        lineNumber: 36,
         columnNumber: 42
     }, undefined);
     else return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _jsxDevRuntime.Fragment), {
@@ -27484,7 +27484,7 @@ const Body = ()=>{
                 }
             }, void 0, false, {
                 fileName: "src/components/Body.jsx",
-                lineNumber: 41,
+                lineNumber: 43,
                 columnNumber: 9
             }, undefined),
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("button", {
@@ -27492,11 +27492,20 @@ const Body = ()=>{
                     //filter the data
                     const data = fitlerData(searchText, allRestaurants);
                     setFilteredRestaurants(data);
+                    console.log(data);
+                    console.log(filteredRestaurants);
+                    if (data.length === 0) return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h1", {
+                        children: "No Items Found"
+                    }, void 0, false, {
+                        fileName: "src/components/Body.jsx",
+                        lineNumber: 68,
+                        columnNumber: 39
+                    }, void 0);
                 },
                 children: "Submit"
             }, void 0, false, {
                 fileName: "src/components/Body.jsx",
-                lineNumber: 53,
+                lineNumber: 55,
                 columnNumber: 9
             }, undefined),
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
@@ -27507,7 +27516,7 @@ const Body = ()=>{
                         key: restaurantcard.info.id,
                         __source: {
                             fileName: "src/components/Body.jsx",
-                            lineNumber: 75,
+                            lineNumber: 89,
                             columnNumber: 25
                         },
                         __self: undefined
@@ -27515,7 +27524,7 @@ const Body = ()=>{
                 })
             }, void 0, false, {
                 fileName: "src/components/Body.jsx",
-                lineNumber: 70,
+                lineNumber: 79,
                 columnNumber: 6
             }, undefined)
         ]
