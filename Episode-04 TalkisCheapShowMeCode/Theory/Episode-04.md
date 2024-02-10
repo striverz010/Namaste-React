@@ -66,6 +66,48 @@ In React, when a component returns multiple elements, we must wrap them in a con
 There is no problem with div containers if they serve a purpose like adding styles to the JSX. However, they are not always needed to wrap our JSX. In this case, when we do, they become extra nodes that clutter the DOM tree.
 for that reason we use `<React.Fragment> <React.Fragment/>` or simply `<> </>`
 
+# What is `Reconciliation` in React?
+* <a href="https://legacy.reactjs.org/docs/reconciliation.html">Reconciliation</a><br>
+* <a href="https://youtu.be/thsUZEzL8ts?si=fMO2w7lFGV1dMYGo">Vidoe about reconciliation</a>
+
+# What is `React Fiber`?
+it is a reimplementation of older versions of the React reconciler.
+* <a href="https://sunnychopper.medium.com/what-is-react-fiber-and-how-it-helps-you-build-a-high-performing-react-applications-57bceb706ff3">React Fiber</a>
+
+# Can we use index as keys in React?
+<img src="https://res.cloudinary.com/practicaldev/image/fetch/s--jpe9LlUf--/c_limit%2Cf_auto%2Cfl_progressive%2Cq_66%2Cw_880/https://dev-to-uploads.s3.amazonaws.com/uploads/articles/8pnq9wjbkq4ejlyf8bva.gif"></img>
+
+* <a href="https://kuldipem.medium.com/say-no-to-array-index-as-key-in-react-my-approaches-to-tackle-it-that-you-can-use-51153bfa8901"></a>
+
+# What is `props` in React?
+``` function ReactComponent(props) {} ```
+The props argument is an argument that React passes to its Components when they are being rendered(and updated too). The name is not just to be props, it can be anything. I was following naming conventions, the props name tells us it's a prop/property passed to the Component.
+
+So, the "attributes" passed to the ReactComponent can be accessed as properties in the props argument. As we said before the props argument is an object.
+```
+function ReactComponent(props) {
+  typeof props; // "object"
+  return null;
+}
+```
+
+Now, we can access the data1 and data2 in the props
+
+```
+function ReactComponent(props) {
+  const data1 = props.data1;
+  const data2 = props.data2;
+  return null;
+}
+```
+
+# What is `Config Driven UI`?
+A "config-driven UI" is a user interface that is built and configured using a declarative configuration file or data structure, rather than being hardcoded. The configuration file or data structure typically contains information about the structure of the UI, such as the layout of the elements, the properties and behaviors of each element, and any data sources or APIs that the UI interacts with.
+
+Using a config-driven UI approach, the UI can be easily modified and customized without requiring changes to the underlying codebase. This makes it easier to maintain, extend, and scale the UI, and also allows for more rapid development and iteration.
+
+
+
 
 
 
