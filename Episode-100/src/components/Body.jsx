@@ -3,12 +3,12 @@ import RestaurantCard from "./Restaurantcard";
 import {useEffect, useState} from "react";
 import ShimmerUI from "./ShimmerUI";
 import {Link} from "react-router-dom";
+import {fitlerData} from "../utils/helper";
+import { RESTAURANT_API } from "../config";
+import useOnline from "../utils/useOnline";
 
 
-function fitlerData(searchText,allRestaurants){
-     const data=allRestaurants.filter((restaurant)=>restaurant?.info?.name?.toLowerCase()?.includes(searchText.toLowerCase()));
-     return data;
-}
+
 
 const Body=()=>{
 
@@ -23,7 +23,7 @@ const Body=()=>{
 
     async function getRestaurants(){
 
-    const data=await fetch("https://www.swiggy.com/dapi/restaurants/list/v5?lat=28.6126255&lng=77.04108959999999&page_type=DESKTOP_WEB_LISTING");
+    const data=await fetch(RESTAURANT_API);
     const json=await data.json();
     
     setAllRestaurants(json?.data?.cards[4].card?.card?.gridElements?.infoWithStyle?.restaurants);
@@ -33,6 +33,9 @@ const Body=()=>{
     
  
    }
+
+   const isOnline =useOnline();
+   if(!isOnline) return <h1> 🔴 Your are offline check your internet connection</h1>
    
    if(allRestaurants?.length===0) return <ShimmerUI/> 
 
