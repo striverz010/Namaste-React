@@ -56,4 +56,29 @@
   padding: 10px;
 }
 
+.shimmer-cards {
+  background-color: #d3d3d3;
+  border-radius: 10px;
+  width: 200px;
+  height: 300px;
+  margin: 10px;
+}
+
+.restaurant-menu {
+  border: 2px solid #000;
+}
+
+.restaurant-menu-items {
+  color: #fff;
+  background-color: #000;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+}
+
+.restaurant-menu-items > img {
+  border-radius: 20px;
+  width: 200px;
+}
+
 /*# sourceMappingURL=index.3a01df49.css.map */

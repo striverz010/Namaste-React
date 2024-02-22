@@ -20,6 +20,7 @@
    font-size: large;
    font-weight: 525; 
 }
+
 .body{
     padding: 10px;
     margin: 10px;
@@ -52,4 +53,28 @@
     border-radius: 10px;
     background-color: black;
     color: white;
+}
+
+.shimmer-cards{
+    width: 200px;
+    height: 300px;
+    background-color: lightgrey;
+    border-radius: 10px;
+    margin: 10px;
+}
+
+.restaurant-menu{
+    border: solid black 2px;
+}
+.restaurant-menu-items{
+    background-color: black;
+    color: white;
+    display: flex;
+    align-items:center;
+    justify-content: center;
+   
+}
+.restaurant-menu-items>img{
+    width: 200px;
+    border-radius: 20px;
 }
